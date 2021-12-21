@@ -1,0 +1,11 @@
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\bin\Debug\security and fire system.exe.config
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\bin\Debug\security and fire system.exe
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\bin\Debug\security and fire system.pdb
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security and fire system.csproj.AssemblyReference.cache
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security_and_fire_system.Properties.Resources.resources
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security and fire system.csproj.GenerateResource.cache
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security and fire system.csproj.CoreCompileInputs.cache
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security and fire system.exe
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security and fire system.pdb
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security_and_fire_system.InitialParametersForm.resources
+F:\НГТУ\Домашние задания\Информатика\Проекты\security and fire system\obj\Debug\security_and_fire_system.ApplicationForm.resources
