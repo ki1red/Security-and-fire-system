@@ -10,7 +10,6 @@ namespace security_and_fire_system
     {
         void AddRoom(Room newRoom);
         void AddRooms(List<Room> newRooms);
-        List<Room> GetList();
 
     }
 }

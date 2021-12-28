@@ -62,12 +62,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ISensorOperation.cs" />
     <Compile Include="IWorkWithList.cs" />
+    <Compile Include="MotionSensor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pyro.cs" />
     <Compile Include="Room.cs" />
+    <Compile Include="SmokeDetector.cs" />
+    <Compile Include="Thief.cs" />
     <Compile Include="TrackingSystem.cs" />
+    <Compile Include="UtilityForForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\thief.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

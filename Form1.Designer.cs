@@ -31,6 +31,9 @@ namespace security_and_fire_system
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitialParametersForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox_thiefChance = new System.Windows.Forms.TextBox();
             this.button_start = new System.Windows.Forms.Button();
             this.checkBox_input = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +47,9 @@ namespace security_and_fire_system
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.textBox_thiefChance);
             this.panel1.Controls.Add(this.button_start);
             this.panel1.Controls.Add(this.checkBox_input);
             this.panel1.Controls.Add(this.label3);
@@ -55,6 +61,36 @@ namespace security_and_fire_system
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 379);
             this.panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(269, 148);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(25, 19);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "%";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(30, 148);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(173, 19);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Шанс проникновения:";
+            // 
+            // textBox_thiefChance
+            // 
+            this.textBox_thiefChance.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox_thiefChance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_thiefChance.Location = new System.Drawing.Point(208, 142);
+            this.textBox_thiefChance.Multiline = true;
+            this.textBox_thiefChance.Name = "textBox_thiefChance";
+            this.textBox_thiefChance.Size = new System.Drawing.Size(55, 28);
+            this.textBox_thiefChance.TabIndex = 7;
             // 
             // button_start
             // 
@@ -84,7 +120,7 @@ namespace security_and_fire_system
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(260, 125);
+            this.label3.Location = new System.Drawing.Point(258, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 19);
             this.label3.TabIndex = 4;
@@ -94,7 +130,7 @@ namespace security_and_fire_system
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(43, 125);
+            this.label2.Location = new System.Drawing.Point(41, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 19);
             this.label2.TabIndex = 3;
@@ -114,7 +150,7 @@ namespace security_and_fire_system
             // 
             this.textBox_fireChance.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox_fireChance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_fireChance.Location = new System.Drawing.Point(199, 119);
+            this.textBox_fireChance.Location = new System.Drawing.Point(197, 94);
             this.textBox_fireChance.Multiline = true;
             this.textBox_fireChance.Name = "textBox_fireChance";
             this.textBox_fireChance.Size = new System.Drawing.Size(55, 28);
@@ -142,6 +178,7 @@ namespace security_and_fire_system
             this.MinimumSize = new System.Drawing.Size(349, 417);
             this.Name = "InitialParametersForm";
             this.Text = "Охранно-пожарная система";
+            this.Load += new System.EventHandler(this.InitialParametersForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -158,6 +195,9 @@ namespace security_and_fire_system
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox_input;
         private System.Windows.Forms.Button button_start;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox_thiefChance;
     }
 }
 

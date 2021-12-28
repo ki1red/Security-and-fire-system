@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace security_and_fire_system
 {
-    public class Pyro: IWorkWithList
+    public class Thief : IWorkWithList
     {
         private List<Room> rooms;
-        private uint chanceOfArson;
+        private uint chanceOfPenetration;
 
-        public Pyro(List<Room> _rooms)
+        public Thief(List<Room> _rooms)
         {
             this.rooms = _rooms;
-            chanceOfArson = 0;
+            chanceOfPenetration = 0;
         }
 
         public void AddRoom(Room newRoom)
@@ -27,24 +27,24 @@ namespace security_and_fire_system
             rooms.AddRange(newRooms);
         }
 
-        public void SetFireToTheRooms()
+        // Проникновение в комнаты
+        public void InfiltrateTheRooms()
         {
             Random r = new Random();
             uint chance;
             foreach (Room room in rooms)
             {
-                
+
                 chance = Convert.ToUInt32(Math.Abs(r.Next()) % 101);
-                if (chance <= chanceOfArson)
-                    room.SetFire();
+                if (chance <= chanceOfPenetration)
+                    room.EnterTheRoom();
             }
         }
 
-        public void SetChanceOfArson(uint percentage)
+        public void SetChanceOfPenetration(uint percentage)
         {
-            this.chanceOfArson = percentage;
-            if (chanceOfArson > 100) chanceOfArson = 100;
+            this.chanceOfPenetration = percentage;
+            if (chanceOfPenetration > 100) chanceOfPenetration = 100;
         }
-
     }
 }

@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace security_and_fire_system
 {
+
+    public delegate void SayValue();
+    public delegate void SayValueForRoom(bool value);
+
     public class Room
     {
         public string name { get; }
 
-        public Fire fire { get; }
+        private bool burn;
+        private bool unauthorizedAccess;
+        public event SayValue ValueForSmokeDetector;
+        public event SayValue ValueForMotionSensor;
+        public event SayValueForRoom ValueFromSmokeDetector;
+        public event SayValueForRoom ValueFromMotionSensor;
+
+        public SmokeDetector smokeDetector { get; }
+        public MotionSensor motionSensor { get; }
 
         public Room(string _name)
         {
@@ -22,33 +34,59 @@ namespace security_and_fire_system
             else
                 this.name = _name;
 
-            fire = new Fire();
+            burn = false;
+            unauthorizedAccess = false;
+
+            ValueForSmokeDetector += SayValueSmokeDetector;
+            ValueForMotionSensor += SayValueMotionSensor;
+            ValueFromSmokeDetector += SetBurn;
+            ValueFromMotionSensor += SetUnauthorizedAccess;
+
+
+            smokeDetector = new SmokeDetector(burn, ValueForSmokeDetector, ValueFromSmokeDetector);
+            motionSensor = new MotionSensor(unauthorizedAccess, ValueForMotionSensor, ValueFromMotionSensor);
+
+        }
+
+        private void SetBurn(bool burn)
+        {
+            this.burn = burn;
+        }
+
+        private void SetUnauthorizedAccess(bool unauthorizedAccess)
+        {
+            this.unauthorizedAccess = unauthorizedAccess;
+        }
+
+        private void SayValueSmokeDetector()
+        {
+            smokeDetector.SetNewValueBurn(burn);
+        }
+
+        private void SayValueMotionSensor()
+        {
+            motionSensor.SetNewMotionSensor(unauthorizedAccess);
         }
 
         // Поджечь комнату
         public bool SetFire()
         {
-            if (fire.Check())
+            if (burn)
                 return false;
 
-            fire.LightTheFire();
+            burn = true;
             return true;
         }
 
-        // Включить встроенную систему тушения
-        public bool EnableAutomaticExtinguishing()
+        // Проникнуть в комнату
+        public bool EnterTheRoom()
         {
-            if (!fire.Check())
+            if (unauthorizedAccess)
                 return false;
 
-            fire.PutOutTheFire();
+            unauthorizedAccess = true;
             return true;
         }
 
-        // Проверить на наличие пожара
-        public bool LookForFire()
-        {
-            return fire.Check();
-        }
     }
 }
