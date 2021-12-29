@@ -160,11 +160,11 @@ namespace security_and_fire_system
             this.button_putOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button_putOut.Enabled = false;
             this.button_putOut.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_putOut.Location = new System.Drawing.Point(576, 12);
+            this.button_putOut.Location = new System.Drawing.Point(435, 10);
             this.button_putOut.Name = "button_putOut";
-            this.button_putOut.Size = new System.Drawing.Size(102, 40);
+            this.button_putOut.Size = new System.Drawing.Size(199, 40);
             this.button_putOut.TabIndex = 7;
-            this.button_putOut.Text = "Потушить";
+            this.button_putOut.Text = "Включить пожаротушение";
             this.button_putOut.UseVisualStyleBackColor = false;
             this.button_putOut.Click += new System.EventHandler(this.button_putOut_Click);
             // 
@@ -173,11 +173,11 @@ namespace security_and_fire_system
             this.button_kickAway.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button_kickAway.Enabled = false;
             this.button_kickAway.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_kickAway.Location = new System.Drawing.Point(688, 12);
+            this.button_kickAway.Location = new System.Drawing.Point(657, 10);
             this.button_kickAway.Name = "button_kickAway";
-            this.button_kickAway.Size = new System.Drawing.Size(102, 40);
+            this.button_kickAway.Size = new System.Drawing.Size(133, 40);
             this.button_kickAway.TabIndex = 8;
-            this.button_kickAway.Text = "Прогнать";
+            this.button_kickAway.Text = "Вызвать охрану";
             this.button_kickAway.UseVisualStyleBackColor = false;
             this.button_kickAway.Click += new System.EventHandler(this.button_kickAway_Click);
             // 

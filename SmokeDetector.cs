@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace security_and_fire_system
 {
-    public class SmokeDetector : ISensorOperation
+    public class SmokeDetector : DefaultSensor
     {
         private bool burn;
         SayValue ValueForSmokeDetector; 
@@ -24,13 +24,13 @@ namespace security_and_fire_system
             this.burn = newBurn;
         }
 
-        public bool CollectInformation()
+        public override bool CollectInformation()
         {
             ValueForSmokeDetector();
             return burn;
         }
 
-        public void EnableProtection()
+        public override void EnableProtection()
         {
             burn = false;
             ValueFromSmokeDetector(burn);

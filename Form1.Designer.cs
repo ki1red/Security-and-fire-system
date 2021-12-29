@@ -140,11 +140,11 @@ namespace security_and_fire_system
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(63, 52);
+            this.label1.Location = new System.Drawing.Point(57, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 19);
+            this.label1.Size = new System.Drawing.Size(151, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Кол-во комнат:";
+            this.label1.Text = "Кол-во помещений:";
             // 
             // textBox_fireChance
             // 
@@ -160,7 +160,7 @@ namespace security_and_fire_system
             // 
             this.textBox_rooms.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox_rooms.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_rooms.Location = new System.Drawing.Point(190, 46);
+            this.textBox_rooms.Location = new System.Drawing.Point(213, 45);
             this.textBox_rooms.Multiline = true;
             this.textBox_rooms.Name = "textBox_rooms";
             this.textBox_rooms.Size = new System.Drawing.Size(43, 28);

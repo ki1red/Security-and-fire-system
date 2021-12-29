@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="security_and_fire_system.DefaultSensor" Collapsed="true">
+    <Position X="3.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>DefaultSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_and_fire_system.MotionSensor" Collapsed="true">
+    <Position X="4.75" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAIAAAAAAAAAAIAAAAAAAAAAAgAAAAAAABA=</HashCode>
+      <FileName>MotionSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_and_fire_system.Pyro" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABCABAIAAAAAAAAAAAAAAAAAAAQAIAA=</HashCode>
+      <FileName>Pyro.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="security_and_fire_system.Room" Collapsed="true">
+    <Position X="3.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIARAAAABABAAgAAAAgQAAAMAABAIAAAAAAAQBA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_and_fire_system.SmokeDetector" Collapsed="true">
+    <Position X="1.75" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAIgAAAAAAQAA=</HashCode>
+      <FileName>SmokeDetector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="security_and_fire_system.Thief" Collapsed="true">
+    <Position X="5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABCAAAIAAIAAAAAAAAAACAIAAAAAAAA=</HashCode>
+      <FileName>Thief.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="security_and_fire_system.TrackingSystem" Collapsed="true">
+    <Position X="1" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAQAAAAAABCAAAACAEAAAAAAACEAAAAAAABAAIA=</HashCode>
+      <FileName>TrackingSystem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="security_and_fire_system.IWorkWithList" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IWorkWithList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="security_and_fire_system.SayValue" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="security_and_fire_system.SayValueForRoom" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
